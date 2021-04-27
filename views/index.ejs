@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('./partials/head.ejs') %>   
+    <title>Hero Timer</title>
+</head>
+
+<body>
+    <div id="container">
+        <%- include('./partials/header.ejs') %>
+        <main>
+            <section class="main_perfil">
+                <%- include('./partials/perfil.ejs') %>
+            </section>
+            <section class="menu_display view">
+                <%- include('./partials/modalMenu.ejs') %>
+            </section>
+            <section class="menu_display levelUp view" id="levelUp" >
+                <div class="levelUpDisplay">
+                    <h2>Issoo parabénsss!!!</h2>
+                    <img src="/img/Icon.svg" alt="">
+                    <p>
+                        No <strong>heroTimer</strong> a cada tarefa você ganha 20xp, agora descanse <strong>5:00</strong> e realize mais tarefas para subir de level! 
+                    </p>
+                    <form action="">
+                        <button type="submit" class="levelUpOk">Ok</button>
+                    </form>
+                </div>
+            </section>
+            <section class="main_timer">
+                <div class="main_display">
+                    <div class="header">
+                        <p>Desafios completos: <span>00</span></p>
+                        <p>#boraCodar</p>
+                    </div>
+                    <div class="main">
+                        <span class="timerHero">--:--</span>
+                    </div>
+                    <div class="footer" id="init" >
+                        <a href="#">Iniciar tarefa</a>
+                    </div>
+                </div>
+                <div class="click_view btn">
+                    <a href="" >Adicionar objetivo</a>
+                </div>
+                <div class="click_view">
+                    Visualizar objetivo atual
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clipRule="evenodd" />
+                    </svg>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
